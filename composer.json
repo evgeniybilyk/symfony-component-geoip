@@ -1,0 +1,32 @@
+{
+  "name": "Nirolf/geoip",
+  "description": "Nirolf GeoIP service",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bilyk Eugene",
+      "email": "evgeniy.bilyk@filmon.com"
+    }
+  ],
+  "keywords": [
+    "Nirolf",
+    "geoip"
+  ],
+  "autoload": {
+    "psr-4": {"Nirolf\\Component\\GeoIP\\": ""},
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "geoip/geoip": "^1.15"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.3.*"
+  },
+  "suggest": {
+    "ext-memcache": "~3.0.8"
+  }
+}
